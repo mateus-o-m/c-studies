@@ -13,8 +13,9 @@ typedef struct {
 
 void showStudent (student std);
 void updateStudent (student *std);
+int verifyInt (void);
 
-int main() {
+int main(void) {
 	student s1;
 	student s2;
 
@@ -27,26 +28,29 @@ int main() {
 }
 
 void showStudent (student std){
-	printf ("Student: %d", std.id);
+	printf ("\nStudent: %d", std.id);
 	printf ("\nName: %s", std.name);
-	printf ("\nAge: %d\n", std.age);
+	printf ("\tAge: %d\n", std.age);
 }
 
 void updateStudent (student *std){
+	fflush (stdin); //cleans the buffer, maybe works only on windows OS
+
 	puts ("Type the student's name: ");
-	//scanf ("%39s", std -> name); //%39s limits array size to 39
+	fgets (std -> name, sizeof(std -> name), stdin);
+	std -> name [strcspn(std -> name, "\n")] = 0; //removes "\n" in the string, makes it into 0 ===> std -> name["\n"_position_index] = 0
+
 	printf ("Type the student's age: ");
-	if (scanf ("%d", &std -> age) != 1){ //verify if the input is an integer(%d)
-		puts ("Invalid input, try again");
-		return;
-	}
+	std -> age = verifyInt ();
 	printf ("Type the student's id: ");
-	if (scanf ("%d", &std -> id) != 1){
-		puts ("Invalid input, try again");
-		return;
-	}
+	std -> id = verifyInt ();
 }
 
-int verifyInt (int* num){
-	
+int verifyInt (void){
+	int num;
+	while (scanf("%d", &num) != 1){ //verify if entering is an integer
+		puts ("Invalid input, try again:");
+		fflush (stdin);
+	}
+	return num;
 }
