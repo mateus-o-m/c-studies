@@ -2,6 +2,9 @@
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 08e9e6ed0c766a650fbdaebe3a71e8c9cd086992
 /*
 Program that show different ways that a pointer can be printed
 */
@@ -16,6 +19,7 @@ int main() {
 	printf ("%%p print format to &age: %p\n", &age);
 	printf ("%%d print format to age: %d\n", age);
 	printf ("\nagePtr has the same value of &age\n*agePtr has the same value of age");
+<<<<<<< HEAD
 =======
 =======
 /*
@@ -42,6 +46,8 @@ int main() {
 	printf ("%%d print format to age: %d\n", age);
 	printf ("\nagePtr has the same value of &age\n*agePtr has the same value of age");
 >>>>>>> 76ae8f9 (Adding visual description of whats the program is doing)
+=======
+>>>>>>> 08e9e6ed0c766a650fbdaebe3a71e8c9cd086992
 
 	return 0;
 }
