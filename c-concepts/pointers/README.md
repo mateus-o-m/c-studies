@@ -1,1 +1,1 @@
-C language concepts learning project 
+Pointer studies in C language 
