@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 Pointer studies in C language
 
 
@@ -10,3 +11,6 @@ Pointer is defined using "\*": int\* agePtr = \&age ===> agePtr is a pointer to 
 
 "\*" operator: is a dereference operator, that access the value stored at a memory address
 
+=======
+Pointer studies in C language 
+>>>>>>> 326e3be (Organizing readme files)
