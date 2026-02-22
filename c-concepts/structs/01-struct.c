@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <locale.h>
+#include <string.h>
 
 /*
 Program that shows struct usage
@@ -19,7 +19,6 @@ typedef struct {
 } driver;
 
 int main() {
-	setlocale(LC_ALL, "pt_BR.UTF-8");
 	//declaring + assigning
 	struct car c1 = {478, "1209AB", 2000.45};
 	struct car c2 = {.value = 50000.99, .id = 540, .plate = "3487CD"};
@@ -29,7 +28,7 @@ int main() {
 	driver d2;
 
 	//members assignment
-	sprintf (d1.name, "Carlos Barros");
+	strcpy (d1.name, "Carlos Barros");
 	d1.age = 20;
 	d1.id = 123;
 	d1.ownCar = c2;
