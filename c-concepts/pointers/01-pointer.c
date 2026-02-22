@@ -18,6 +18,7 @@ int main() {
 	printf ("%%d print format to *agePtr: %d\n", *agePtr);
 	printf ("%%p print format to &age: %p\n", &age);
 	printf ("%%d print format to age: %d\n", age);
+
 	printf ("\nagePtr has the same value of &age\n*agePtr has the same value of age");
 <<<<<<< HEAD
 =======
