@@ -9,7 +9,7 @@
 
 Conversão explicita de tipo: mudar o tipo de uma variável anteriormente declarada
  * Formato: `(novoTipo) variavel`
-   * Exemplo:
+#### Exemplo:
 ```c
 int num1 = 7;
 int num2 = 2;
