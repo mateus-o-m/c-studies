@@ -9,4 +9,9 @@ Principais conceitos da linguagem C:
 * [Tipos de dados](concepts/tipos-dados.md)
 * [Entrada e saída de dados](concepts/entrada-saida-dados.md)
 * [Operadores](concepts/operadores.md)
+* [Loops e tomada de decisão](concepts/loop-decisao.md)
+* [Arrays](concepts/arrays.md)
+* [Funções](concepts/funcoes.md)
+* [Ponteiros](concepts/ponteiros.md)
+* [Structs e unions](concepts/struct-union.md)
 
