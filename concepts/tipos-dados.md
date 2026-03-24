@@ -7,6 +7,17 @@
  * `string`: para múltiplos caracteres
  * `struct`: definido pelo usuário, pode conter vários tipos de dados
 
+Conversão explicita de tipo: mudar o tipo de uma variável anteriormente declarada
+ * Formato: `(novoTipo) variavel`
+   * Exemplo:
+```c
+int num1 = 7;
+int num2 = 2;
+float result;
+
+result = (float) (num1/num2); //result será 3.5
+```
+
 ### Modificadores/especificadores
 
  * `long`: pode ser usado com tipos `int` ou `double`. Não pode ser usado com `float`
