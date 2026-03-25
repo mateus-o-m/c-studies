@@ -23,7 +23,7 @@ result = (float) (num1/num2); //result será 3.5
    * `lomg int` ou `long`: aumenta precisão de `int` para 32 bit
    * `lomg long int` ou `long long`: aumenta para 64 bits
    * `long double`: aumenta precisão de double
- * `umsigned`
+ * `umsigned`: define números sem sinal (negativo), aumentam a precisão
  * `const`: define que o valor de uma variável não poderá ser mudado
    * Exemplo: `const int numConst = 5; // numConst valerá sempre 5`
  * `typedef`: define um nome personalizável para tipos
