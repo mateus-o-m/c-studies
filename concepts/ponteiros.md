@@ -1,11 +1,11 @@
 ## Ponteiros
 
-Ponteiro é uma variável que salva, como seu valor,
-o endereço de memória de outra variável
+Ponteiro é uma variável que salva, como seu valor,o endereço de memória de outra variável
+
 Formato exemplo: `int *xPtr = &x;`
  * `xPtr`: é um pointeiro para o `int x`
 
-Operadores:
+#### Operadores:
  * `*`: deferência, retorna o valor armazenado
 em um endereço de memória 
  * `&`: referência, retorna o endereço de memória de uma variável
@@ -19,6 +19,7 @@ sobre um array
 ### Uso em funções
 
 Podem ser usados para retornar mais de um valor
+#### Exemplo:
 ```c
 void calculos (int &num1, int &num2){
    //cálculos 

@@ -1,6 +1,6 @@
 ## Funções
 
-Estrutura das funções:
+#### Estrutura das funções:
 ```c
 tipoRetornado nomeFuncao (parametros){
    //corpo da função
@@ -8,5 +8,7 @@ tipoRetornado nomeFuncao (parametros){
    return variavelDoTipoRetornado;
 }
 ```
-Usar o tipo retornado como `void`,
-Indica que a função não retorna nenhum valor
+Usar o tipo retornado como `void`, Indica que a função não retorna nenhum valor
+
+strcopy
+snprintf

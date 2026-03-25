@@ -1,7 +1,9 @@
 ## Arrays
 
 Conjunto com variáveis de mesmo tipo
+
 Formato: `<tipoDoDado> nomeArray [quantidadeItens];`
+
 Valores são acessados via índice:
  * Ex: `numeros[4]`, acessa o quinto item do array `numeros`
 Atribuição de múltiplos valores:
@@ -13,16 +15,20 @@ Array multidimensional:
 ### Strings
 
 É um array de caracteres:
+
 Formato: `char ola[] = "Olá mundo";`
+
 Input de strings, o tamanho do array deve ser especificado antes:
  * Usando `scanf()`: se o input tiver espaços, somente os caracteres antes
 do primeiro espaço serão salvos
-   * ```c
+#### Exemplo:
+```c
 char palavra[30];
 scanf ("%s", palavra);
 ```
  * Usando `fgets()`: salva todos os caracteres digitados, excluindo caractere escape
-   * ```c
+#### Exemplo:
+```c
 char palavra[30];
 fgets (palavra, 30, stdin);
 ```

@@ -8,8 +8,7 @@
  * `struct`: definido pelo usuário, pode conter vários tipos de dados
 
 Conversão explicita de tipo: mudar o tipo de uma variável anteriormente declarada
- * Formato: `(novoTipo) variavel`
-#### Exemplo:
+#### Formato: `(novoTipo) variavel`, exemplo de uso:
 ```c
 int num1 = 7;
 int num2 = 2;

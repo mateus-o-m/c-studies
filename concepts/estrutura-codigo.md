@@ -1,6 +1,6 @@
 ## Estrutura do código
 
-Esqueleto da estrutura básica:
+#### Esqueleto da estrutura básica:
 ```c
 // inclusão de biblioteca(s)
 # include <biblioteca1.h>

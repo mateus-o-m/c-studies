@@ -3,7 +3,9 @@
 ### Função `printf()`
 
 Disponível na biblioteca `stdio.h`
+
 O `printf()` imprime uma mensagem no terminal
+
 Formato: `printf ("mensagem", parametros);`
 
 ### Especificadores de formato
@@ -30,11 +32,12 @@ Formato: `printf ("mensagem", parametros);`
 ### Função `scanf()`
 
 Pega input do usuário baseado em um especificador de formato
+
 Formato: `scanf ("especificador", endereço_da_variavel);`
 
 ### Função `fgets()`
 
-Para input de strings, consegue salvar vários caracteres,
-incluindo espaços
+Para input de strings, consegue salvar vários caracteres, incluindo espaços
+
 Formato: `fgets (nomeString, tamanhoString, tipoEntrada);`
  * `tipoEntrada` normalmente é o stdin (via teclado do usuário)

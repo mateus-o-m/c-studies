@@ -1,12 +1,12 @@
 ## Interruptores
 
 O `break;` interrompe a execução de loops ou tomadores de decisão
+
 A instrução `continue;` pula a iteração atual de um loop e vai para a próxima
 
 ## Tomada de decisão
 
-Instrução `if-else`
- * Formato:
+#### Instrução `if-else`
 ```c
 if (condição){
    // código se condição == True
@@ -17,8 +17,7 @@ if (condição){
 }
 ```
 
-Instrução `switch-case`
- * Formato:
+#### Instrução `switch-case`
 ```c
 switch (variável){
    case valor1:
@@ -35,7 +34,7 @@ switch (variável){
 
 ## Loops
 
-Loop `while`:
+#### Loop `while`:
 ```c
 while (comdicao){
    /*
@@ -44,7 +43,7 @@ while (comdicao){
    */
 }
 ```
-Variação `do-while`, garante que o loop `while` execute pelo menos uma vez:
+#### Variação `do-while`, garante que o loop `while` execute pelo menos uma vez:
 ```c
 do {
    /*
@@ -54,7 +53,7 @@ do {
 } while (condicao);
 ```
 
-Loop `for`:
+#### Loop `for`:
 ```c
 for (inicializacao; comdicao/termino; incremento/decremento){
    /*
