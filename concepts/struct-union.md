@@ -3,7 +3,8 @@
 São tipos de dados definidos pelo usuário, que podem conter
 variáveis com diferentes tipos de dados, inclusive outras structs
 
-Variáveis do tipo struct são guardadas em blocos contiguos de memória 
+Variáveis do tipo struct são guardadas em blocos contiguos de memória
+
 #### Formato da `struct`:
 ```c
 struct novaStruct {
@@ -44,4 +45,52 @@ sprintf (n1.alfa, "abcdef")
 /*utilizando conversão explicita de tipo
 n1 = (novaStruct) {20, 1.0, "abcdef"};
 */
+```
+
+### Ponteiros para structs
+
+Declarando um ponteiro: `struct umaStruct *structPtr`
+
+Guardando o endereço de uma `struct`: `structPtr = &struct`
+
+Acessando o valor de um membro da `struct`: `structPtr -> membroDaStruct`
+ * Oitra maneira de acessar um membro: `(*structPtr).membroDaStruct`
+ * Exemplo de membros de structs: `.num`, `.nome`, `.decimal`
+
+### Structs como parâmetros de funções 
+
+Passar uma `struct` por valor, cria uma cópia dessa `struct` para ser usada na função. Os valores dos membros da `struct` não serão alterados
+
+Passar uma `struct` por referência, usando ponteiros (`&struct`), permite a alteração dos valores de membros dessa  `struct`
+
+#### Exemplo de ponteiros e `struct` como parâmetros de funções:
+```c
+#include <stdio.h>
+#include <string.h>
+
+typedef struct{
+   char name[50];
+   int age;
+} pessoa;
+
+void atualizarPessoa (pessoa *ps);
+void mostrarPessoa (pessoa ps);
+
+int main() {
+   pessoa umaPessoa;
+
+   atualizarPessoa (&umaPessoa);
+   mostrarPessoa (umaPessoa);
+
+   return 0;
+}
+
+void atualizarPessoa (pessoa *ps){
+   strcpy (ps -> name, "Roberto Ramos");
+   ps -> age = 30;
+}
+
+vois mostrarPessoa (pessoa ps){
+   printf ("Nome: %s\nIdade: %d\n", ps.name, ps.age);
+}
 ```
