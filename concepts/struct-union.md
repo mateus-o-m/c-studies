@@ -76,7 +76,7 @@ typedef struct{
 void atualizarPessoa (pessoa *ps);
 void mostrarPessoa (pessoa ps);
 
-int main() {
+int main(){
    pessoa umaPessoa;
 
    atualizarPessoa (&umaPessoa);
@@ -93,4 +93,31 @@ void atualizarPessoa (pessoa *ps){
 vois mostrarPessoa (pessoa ps){
    printf ("Nome: %s\nIdade: %d\n", ps.name, ps.age);
 }
+```
+
+### Array de structs
+
+Arrays guardam elememntos de qualquer tipo, incluindo structs
+ * Formato: `struct structName structVar [numberOfElemnts]`
+
+#### Exemplo:
+```c
+#include <stdio.h>
+
+typedef struct{
+   char name[50];
+   int age;
+} pessoa;
+
+int main(){
+   pessoa pessoas[5];
+
+   for (k = 0; k < 3; k++) {
+      volume = boxes[k].h*boxes[k].w*boxes[k].l;
+      printf("box %d volume %d\n", k, volume);
+   }
+
+   return 0;
+}
+
 ```
