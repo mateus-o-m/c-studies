@@ -7,7 +7,7 @@ Variáveis do tipo struct são guardadas em blocos contiguos de memória
 
 #### Formato da `struct`:
 ```c
-struct novaStruct {
+struct novaStruct{
    int num;
    float decimal;
    char alfa[23];
@@ -16,7 +16,7 @@ struct novaStruct {
 };
 
 //usando typedef
-typedef struct {
+typedef struct{
    Int num;
    float decimal;
    char alfa[23];
@@ -112,12 +112,61 @@ typedef struct{
 int main(){
    pessoa pessoas[5];
 
-   for (k = 0; k < 3; k++) {
+   for (k = 0; k < 3; k++){
       volume = boxes[k].h*boxes[k].w*boxes[k].l;
       printf("box %d volume %d\n", k, volume);
    }
 
    return 0;
 }
+```
 
+## Unions
+
+São semelhantes á structs, porém a `union` armazena apenas uma
+variável por vez porque o espaço alocado é compartilhado com todos
+os membros da `union`. O membro com maior tipo de dado determina o
+espaço alocado para uma determinada `union`
+
+Unions úteis para o gerenciamento de memória. O fato de possuir um
+espaço alocado limitado, ajuda na diminuição da fragmentação de memória
+
+#### Formato da `union`
+```c
+union novaUniao{
+    int num;
+    float decimal;
+    char palavra[20]; 
+};
+```
+
+### Atribuição de membros
+
+Semelhante à das structs, porém somente o útlimo membro atribuído 
+ficará salvo na `union`
+
+#### Exemplo de atribuição
+```c
+#include <stdio.h>
+#include <string.h>
+
+union novaUniao{
+   int num;
+   float decimal;
+   char palavra[20]; 
+};
+
+int main() {  
+   union novaUniao nU;
+
+   nU.num = 1;
+   nU.decimal = 2.3;
+   strcpy (nU.palavra, "olá mundo");
+
+   printf ("%d\n", nU.num); //algum int aleatório
+   printf ("%f\n", nU.decimal); //algum float aleatório
+   printf ("%s\n", nU.palavra); //único membro que terá um valor coerente
+
+   return 0;
+}
 ```
